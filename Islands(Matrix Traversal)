@@ -16,3 +16,4 @@ DIrected grpahs:
 Indegree and out degree for directed graph:
 In coming nodes to a Node is in degree
 the no of outgoing nodes from a node is out degree
+Edge weight if no edge weight that we need to consider unit of work
