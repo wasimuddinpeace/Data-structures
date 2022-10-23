@@ -1,1 +1,10 @@
-
+Graphs
+Node/Vertex
+Edges
+directed graphs
+Undirected graphs
+Cycles in a grah: Undirected cyclic graph if we start from onre node and end on same node
+DIrected acyclic grah(DAG)
+Directed cyclic graph
+what is path: contains mutliple nodes and A node cannot appear twice in a path
+Degree of a node: no of nodes coming in and out for undirected graph
