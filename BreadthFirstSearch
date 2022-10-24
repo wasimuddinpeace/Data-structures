@@ -56,24 +56,24 @@ public class Main
     
     public static ArrayList<Integer> bfsOfGraph(int v, ArrayList<ArrayList<Integer>> adj){
 
-ArrayList<Integer> bfs = new ArrayList<>();
+      ArrayList<Integer> bfs = new ArrayList<>();
 
-boolean[] isVis = new boolean[v];
+      boolean[] isVis = new boolean[v];
  
-Queue<Integer> q = new LinkedList<>();
+      Queue<Integer> q = new LinkedList<>();
 
-q.add(1);
-isVis[1] = true;
+     q.add(1);
+     isVis[1] = true;
 
 
-while(!q.isEmpty()){
-
-   Integer node = q.poll();// q. poll to get the top element from Q
-   bfs.add(node);// add that to array list of bfs
+    while(!q.isEmpty()){
+     int node = q.poll();// q. poll to get the top element from Q
+     bfs.add(node);// add that to array list of bfs
    
-    for(Integer it:adj.get(node)){
-       System.out.print(adj.get(node));
+    for(int it:adj.get(node)){
+       System.out.print(it);
     if(isVis[it] == false){
+    //    System.out.print(it);
        isVis[it] = true;
         q.add(it);
     }
