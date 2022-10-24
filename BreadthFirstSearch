@@ -1,30 +1,86 @@
 
-public ArrayList<Integer> bfsOfGraph(int v, ArrayList<ArrayList<Integer>> adj){
+/*
+Online Java - IDE, Code Editor, Compiler
 
-ArrayList<Integer> bbfs = new ArrayList<>();
+Online Java is a quick and easy tool that helps you to build, compile, test your programs online.
+*/
+import java.util.*;
+public class Main
+{
+    public static void main(String[] args) {
+        System.out.println("Welcome to Online IDE!! Happy Coding :)");
+        int n =10;
+         ArrayList<ArrayList<Integer>> adj = new ArrayList<>();
+    for(int i=0;i<n;i++){
+        //
+        adj.add(new ArrayList());
+        //System.out.println(adj.get(i).add(1));
+    }
+    adj.get(1).add(2);
+    adj.get(1).add(6);
+    System.out.println(adj);
+    adj.get(2).add(1);
+    adj.get(2).add(3);
+    adj.get(2).add(4);
+    System.out.println(adj);
+    
+    adj.get(3).add(2);
+    System.out.println(adj);
+    
+    adj.get(4).add(2);
+    adj.get(4).add(5);
+    System.out.println(adj);
+    
+    adj.get(5).add(4);
+    adj.get(5).add(8);
+    System.out.println(adj);
+    adj.get(6).add(1);
+    adj.get(6).add(7);
+    adj.get(6).add(9);
+    
+    System.out.println(adj);
+    adj.get(7).add(8);
+    adj.get(7).add(6);
+    
+    System.out.println(adj);
+    adj.get(8).add(5);
+    adj.get(8).add(7);
+    System.out.println(adj);
+    adj.get(9).add(6);
+    
+        System.out.print(adj);
+        Main.bfsOfGraph(n,adj);
+    }
+    
+    
+    
+    public static ArrayList<Integer> bfsOfGraph(int v, ArrayList<ArrayList<Integer>> adj){
+
+ArrayList<Integer> bfs = new ArrayList<>();
 
 boolean[] isVis = new boolean[v];
  
 Queue<Integer> q = new LinkedList<>();
 
-q.add(0);
-vis[0] = true;
+q.add(1);
+isVis[1] = true;
 
 
 while(!q.isEmpty()){
 
-   Integer node = q.poll();
-   bfs.add(node);
+   Integer node = q.poll();// q. poll to get the top element from Q
+   bfs.add(node);// add that to array list of bfs
    
     for(Integer it:adj.get(node)){
- 
-    if(vis[it] == false){
-       vis[it] = true;
+       System.out.print(adj.get(node));
+    if(isVis[it] == false){
+       isVis[it] = true;
         q.add(it);
     }
   }
 }
 
+System.out.print(bfs);
   return bfs;
 }
-} 
+}
