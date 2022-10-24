@@ -4,16 +4,25 @@ Edges (lines)
 directed graphs
 Undirected graphs
 Cycles in a grah: Undirected cyclic graph if we start from onre node and end on same node
-DIrected acyclic grah(DAG)
+
+Directed acyclic grah(DAG)
 Directed cyclic graph
 what is path: contains mutliple nodes and A node cannot appear twice in a path
 
-undirected :
+Undirected :
 Degree of a node: no of nodes coming in and out of undirected graph
 Degree of a graph = 2*no of edges
 
-DIrected grpahs:
+Directed grpahs:
 Indegree and out degree for directed graph:
 In coming nodes to a Node is in degree
+
 the no of outgoing nodes from a node is out degree
 Edge weight if no edge weight that we need to consider unit of work
+
+Connected Graphs:
+
+1. Always visit from 1 t0 n nodes.
+2. Check if the node ha been visited already, if not start the traveral from there.
+
+
