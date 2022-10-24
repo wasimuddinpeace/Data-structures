@@ -26,3 +26,10 @@ Connected Graphs:
 2. Check if the node ha been visited already, if not start the traveral from there.
 
 
+for(int i=0; i<n; i++){
+  if(!isVis[i]){
+       traversal(i); // if the node is not visited, we need to start the node from there. 
+    }
+}
+
+
