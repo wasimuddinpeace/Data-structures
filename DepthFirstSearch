@@ -1,1 +1,36 @@
 
+public static void dfs(int node, boolean [] vis, ArrayList<Arrayist<Integer>> adj, ArrayList<Integer> ls){
+
+vis[node] = true;
+ls.add(node);
+
+for(int it: adj.get(node)){
+  if(vis[it] == fasle){
+
+   dfs(it, vis, adj, ls);
+}   
+}
+}
+
+public ArrayList<Integer> DfsOfGraph(int V, ArrayList<ArrayList<Integer>> adj){
+
+boolean vis[] = new boolean[V+1];
+vis[0] = true;
+ArrayList<Integer> ls = new ArrayList<>();
+dfs(0,vis,adj,ls);
+return ls;
+}
+
+}
+
+adjacency List
+1 --> {2,3}
+2 --> {1,5,6}
+3 --> {1,7 ,4}
+4 --> {3,8}
+5 --> {2}
+6 --> {2}
+7-->  {3,8}
+8 --> {4,7}
+
+starting-
